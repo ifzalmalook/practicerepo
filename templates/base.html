@@ -36,10 +36,10 @@
                     <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Crafts</a>
+                    <a class="nav-link" href="{% url 'projects' %}">Projects</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">New</a>
+                    <a class="nav-link {% if url_name == add_project %}active{% endif %}" href="{% url 'add_project' %}">New</a>
                   </li>
                   <!-- Authentication -->
                   {% if user.is_authenticated %}

@@ -21,6 +21,8 @@ from projects.views import home
 urlpatterns = [
     path("accounts/", include("allauth.urls")),
     path('admin/', admin.site.urls),
+    path('djrichtextfield/', include('djrichtextfield.urls')),
     path('', include('home.urls')),
+    path('projects/', include('projects.urls'))
 
 ]
