@@ -1,0 +1,38 @@
+{% extends 'base.html' %} {% block content %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <!-- Project title goes in these h1 tags -->
+            <h1 class="project-title text-center">{{ project.title }}</h1>
+            <!-- Project author goes before the | the project's created date goes after -->
+            <p class="project-subtitle text-center">{{ project.author }} | {{ project.published_on }}</p>
+            <div class="text-center">
+            <p>{{ project.materials | safe }}</p>
+            </div>
+        </div>
+        <div class="col-md-6 mt-md-2">
+            <img src="{{ project.image.url }}" class="img-fluid" alt="{{ project.title }}">
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col mb-4 mt-3 left top">
+            <div class="card-body text-center">
+                <!-- The project steps go inside the card-text. -->
+                <!-- Use the | safe filter inside the template tags -->
+                <p class="card-text">{{ project.steps | safe }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  {% endblock %}

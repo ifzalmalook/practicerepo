@@ -47,3 +47,36 @@ footer {
     box-shadow: var(--smal-box-shadow);
     border-radius: 5px;
 }
+
+.card-text, .card-title {text-align: center;}
+
+ 
+
+/* .image-container {
+    height: 300px;
+    object-fit: contain;
+}
+
+.card-img-top {
+    height: 100%;
+    width: auto;
+    
+} */
+
+.image-container {
+    height: 400px; /* Set a fixed height for the image container */
+    /* display: flex; Use flexbox to align image vertically */
+    align-items: center; /* Center image vertically */
+    justify-content: center; /* Center image horizontally */
+}
+
+.card-img-top {
+    height: 300px;
+    max-width: 100%; /* Ensure the image does not exceed the container width */
+    object-fit: contain; /* Maintain aspect ratio and fit the entire image within the container */
+}
+
+.card-body {
+    border: 10px solid #bad4aa7c;
+    height: 600px;
+}
