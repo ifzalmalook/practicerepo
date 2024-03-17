@@ -49,7 +49,9 @@ footer {
 }
 
 .card-text, .card-title {text-align: center;}
-
+.card-container {
+    font-size: x-large;
+}
  
 
 /* .image-container {
@@ -79,4 +81,14 @@ footer {
 .card-body {
     border: 10px solid #bad4aa7c;
     height: 600px;
+}
+
+.card-body {
+    
+    overflow-x: auto; /* Enable scrolling */
+}
+
+.full-image {
+    max-height: 500px;
+    
 }

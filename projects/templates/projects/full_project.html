@@ -5,34 +5,64 @@
 
 
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-6">
-            <!-- Project title goes in these h1 tags -->
-            <h1 class="project-title text-center">{{ project.title }}</h1>
-            <!-- Project author goes before the | the project's created date goes after -->
-            <p class="project-subtitle text-center">{{ project.author }} | {{ project.published_on }}</p>
+<div class="container-fluid mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-6">
             <div class="text-center">
+            <!-- Project title goes in these h1 tags -->
+            <h1 class="project-title">{{ project.title }}</h1>
+            <!-- Project author goes before the | the project's created date goes after -->
+            <p class="project-subtitle"> Author: {{ project.author }} | {{ project.published_on }}</p>
+            <p> Category: {{project.category}}</p>
+        </div>
+        <h1 class = "text-center">Description</h1>
+            <div class ="row justify-content-center">
+                <div class = "col offset-md-2">
+                    
+                <p>{{ project.description | safe }}</p>
+            </div>
+            </div>
+
+            <hr>
+            
+            
+            <div class = "row justify-content-center">
+                <div class="col-auto">
+            <h2 class = "text-center">Materials</h2>
             <p>{{ project.materials | safe }}</p>
             </div>
         </div>
-        <div class="col-md-6 mt-md-2">
-            <img src="{{ project.image.url }}" class="img-fluid" alt="{{ project.title }}">
+        </div>
+
+
+        <div class="col-lg-6 mt-lg-2 col-auto full-image">
+            <img src="{{ project.image.url }}" class="img-fluid full-image" alt="{{ project.title }}">
         </div>
     </div>
 </div>
+
+<hr>
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col mb-4 mt-3 left top">
-            <div class="card-body text-center">
+        <div class = "col-md-10 mb-4 mt-3 mx-auto">
+        
+            <div>
+                <div class = "text-center">
+                <h1> Steps </h1>
+            </div>
+                
+            <div class = "card-container">
                 <!-- The project steps go inside the card-text. -->
                 <!-- Use the | safe filter inside the template tags -->
                 <p class="card-text">{{ project.steps | safe }}</p>
+            </div>  
             </div>
-        </div>
+        </div>   
+        
     </div>
 </div>
 
+<hr>
 
   {% endblock %}
