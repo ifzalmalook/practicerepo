@@ -2,7 +2,8 @@
 
 /* Navbar */
 nav, footer {
-    background-color: #bad4aa;
+    background-color: #E6CCFF;
+    font-size: xx-large;
 }
 
 /* Keep footer at bottom */
@@ -15,7 +16,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: white;
-    color: purple;
+    color: black;
 
 }
 
@@ -79,8 +80,10 @@ footer {
 }
 
 .card-body {
-    border: 10px solid #bad4aa7c;
+    border: 5px solid #E6CCFF;
     height: 600px;
+    box-shadow: 0px 4px 8px #E6CCFF;
+    border-radius: 10px;
 }
 
 .card-body {
@@ -92,3 +95,115 @@ footer {
     max-height: 500px;
     
 }
+
+.add-form .form-control {
+    width: 30%;
+}
+
+.text-box {
+    font-size:xx-large;
+}
+
+.card-text {word-wrap: break-word;}
+
+.step-box {
+    border: 1px solid red;
+    overflow: auto;
+    word-wrap: break-word;
+}
+
+.limit-text {
+    width: 100%;
+}
+
+.masthead {
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    
+    width: 100%;
+}
+
+.masthead-text {
+    background-color: #E6CCFF;
+    color: black;
+    position: relative;
+}
+
+/* style card titles in to buttons */
+
+.clickable {
+    background-color: #E6CCFF;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+.main-page {
+    background-image: url(static/images/vase.jpg);
+    height: 200px;
+    width: 200px;
+}
+
+.jumbotron-container {
+    background-image: url("https://res.cloudinary.com/dshyrmsg2/image/upload/v1710946478/vase_eqnwhz.jpg");
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: overlay;
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    /* Homepage */
+
+    .jumbotron-container {
+        background-image: url("https://res.cloudinary.com/de9lbkrcb/image/upload/v1701525668/ella-olsson-KPDbRyFOTnE-unsplash_ocpm5z.jpg");
+        background-color: rgba(0, 0, 0, 0.3);
+        background-blend-mode: overlay;
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+    
+    
+    .button-hero {
+        border-radius:6px;
+        border:1px solid var(--yellow);
+        display:inline-block;
+        cursor:pointer;
+        padding:16px 31px;
+        text-decoration:none;
+        color: var(--dark);
+        background-color: var(--yellow);
+    }
+    
+    .jumbotron .button-hero:hover {
+        color:var(--yellow);
+        background-color: var(--dark);
+        border:1px solid var(--dark);
+        text-decoration: none;
+    }
+    
+    .button-hero h3 {
+        color: yellow;
+    }
+    
+    #hero-text {
+        color: var(--off-white);
+        font-weight: 500;
+    }
+
+    .like {
+        font-size:xx-large;
+        background-color: white;
+        border: none;
+    }

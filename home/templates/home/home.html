@@ -1,1 +1,59 @@
 {% extends 'base.html' %}
+
+{% block content %}
+
+
+    <div class="container-fluid g-0">
+        <div class="row">
+            <div class="col">
+                <div class ="background">
+
+                </div>
+            </div>
+            </div>
+        </div>
+
+    
+
+
+
+<!-- 
+<div class="container">
+  <div class="row">
+    <div class="col main-page">
+      <p>background image here</p>
+    </div>
+  </div>
+</div> -->
+
+<!-- <div class="container flex-column pt-3 ">
+    <section class="text-center">
+        <h1 class="main-title mx-auto">Craft Your Creativity, One Project at a Time!</h1>
+        <p class="pt-4">
+            Welcome to Simple Crafts, your ultimate destination for all things crafting! Dive into a world of endless creativity where imagination knows no bounds. Whether you're a seasoned artisan or just starting your crafting journey, our platform offers a treasure trove of inspiration, tutorials, and support to fuel your passion. From DIY projects to expert tips, discover the joy of crafting and let your creativity flourish with us. Join our vibrant community today and unlock the endless possibilities of handmade beauty!
+        </p>
+    </section>
+
+    
+
+
+
+    <section>
+        <div class="row project-container">
+            {% for project in object_list %}
+                <div class="col-md-4">
+                    <div class="mt-2 mb-2">
+                        <a href="{% url 'full_project' project.slug %}">
+                            <img src="{{ project.image.url }}" alt="image of {{ project.title }}" style="width:100%">
+                        </a>   
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+</div> -->
+
+
+
+
+{% endblock %}

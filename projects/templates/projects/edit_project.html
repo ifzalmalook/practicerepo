@@ -6,13 +6,13 @@
 
 <div class="container">
     <form action="" method = "POST" enctype = "multipart/form-data" class="add-form">
-        <h1 class= "text-center"></h1>
+        <h1 class= "text-center"> Edit Project</h1>
         {% csrf_token %}
         {{form.media}}
         {{ form|crispy  }}
         <div class="text-center">
             <button type = "submit" class = "btn btn-primary mt-2">
-                Add Project
+                Edit Project
             </button>
         </div>
     </form>
